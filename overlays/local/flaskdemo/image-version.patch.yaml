@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
         - name: flaskdemo
-          image: msvkc1902/test-app:20
+          image: msvkc1902/test-app:21
