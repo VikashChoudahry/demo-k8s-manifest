@@ -2,16 +2,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: local-flaskdemo
+  name: local-demo-node-app
   namespace: argocd
 spec:
   destination:
-    namespace: local-demo
+    namespace: local-demo-node-app
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: overlays/local/flaskdemo
-    repoURL: https://github.com/VikashChoudahry/k8s-manifest.git
-    targetRevision: development
+    path: main/demo-node-app
+    repoURL: https://github.com/VikashChoudahry/demo-k8s-manifest.git
+    targetRevision: main
   syncPolicy:
     automated: {}

@@ -2,12 +2,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flaskdemo
+  name: demo-node-app
 spec:
   template:
     spec:
       containers:
-        - name: flaskdemo
+        - name: demo-node-app
           resources:
             requests:
               cpu: 50m

@@ -1,0 +1,11 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-node-app
+spec:
+  template:
+    spec:
+      containers:
+        - name: demo-node-app
+          image: 303522029614.dkr.ecr.us-east-1.amazonaws.com/demo-node-app:build-7

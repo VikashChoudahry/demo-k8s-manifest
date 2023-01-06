@@ -4,22 +4,21 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: flaskdemo
-  name: flaskdemo
+    app: demo-node-app
+  name: demo-node-app
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: flaskdemo
+      app: demo-node-app
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: flaskdemo
+        app: demo-node-app
     spec:
       containers:
-      - image: msvkc1902/test-app:1
-        name: flaskdemo
-        resources: {}
+        - name: demo-node-app
+          image: 303522029614.dkr.ecr.us-east-1.amazonaws.com/demo-node-app:build-0
 status: {}
