@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
         - name: demo-node-app
-          image: 303522029614.dkr.ecr.us-east-1.amazonaws.com/demo-node-app:build-7
+          image: 303522029614.dkr.ecr.us-east-1.amazonaws.com/demo-node-app:build-11
